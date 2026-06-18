@@ -5,51 +5,53 @@
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Font elegante (Montserrat) per un look da studio professionale -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" as="style" type="text/css" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Colore del browser su mobile (Verde Salvia) -->
-    <meta name="theme-color" content="#8EA49A">
+    <meta name="theme-color" content="#D2B4B4">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
-    <!-- Personalizzazione Colori: Salvia e Tortora -->
     <style>
       body {
         font-family: 'Montserrat', sans-serif;
-        color: #333333; /* Grigio scuro, più morbido del nero puro */
-        background-color: #FAFAF9; /* Sfondo neutro, pulito e caldo */
+        color: #4A4A4A; /* Grigio scuro elegante per il testo, mai nero puro */
+        background-color: #FFFFFF; /* Bianco puro per la massima pulizia */
       }
       .page-header {
-        /* Gradiente Verde Salvia */
-        background-color: #8EA49A;
-        background-image: linear-gradient(120deg, #8EA49A, #A3B1A6);
+        /* Gradiente Rosa Antico Desaturato */
+        background-color: #D2B4B4;
+        background-image: linear-gradient(120deg, #D2B4B4, #E0C6C6);
       }
       .project-name {
         font-weight: 600;
         letter-spacing: 1px;
+        color: #FFFFFF;
       }
       .project-tagline {
         font-weight: 300;
+        color: #FFFFFF;
       }
       a {
-        color: #8EA49A;
+        color: #D2B4B4; /* Rosa antico per i link */
       }
       a:hover {
-        color: #6B8076;
+        color: #B89A9A; /* Rosa antico leggermente più scuro al passaggio del mouse */
       }
       .btn {
-        background-color: #E5E0D8; /* Tortora */
-        color: #333333;
-        border-color: #D6D1C4;
+        background-color: #E2E4E6; /* Grigio perla per i bottoni */
+        color: #4A4A4A;
+        border-color: #D1D4D6; /* Grigio perla leggermente più scuro per i bordi */
         transition: background-color 0.3s ease;
       }
       .btn:hover {
-        background-color: #D6D1C4;
-        color: #111111;
+        background-color: #D1D4D6;
+        color: #222222;
+      }
+      .site-footer {
+        border-top: 1px solid #E2E4E6; /* Linea di separazione in grigio perla */
       }
     </style>
   </head>
@@ -57,7 +59,6 @@
     <a id="skip-to-content" href="#content">Salta al contenuto.</a>
 
     <header class="page-header" role="banner">
-      <!-- Se nel file _config.yml non ci sono i dati, usa i valori predefiniti per lo studio -->
       <h1 class="project-name">{{ page.title | default: site.title | default: "Studio 360 Pilates" }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: "Matwork • Reformer • Movimento Consapevole" }}</h2>
     </header>
