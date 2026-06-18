@@ -52,7 +52,7 @@ Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili
     let targetLink = "";
 
     if (type === 'privata') {
-      targetLink = "studio-360-pilates-n0s257/50min";
+      targetLink = "studio-360-pilates-n0s257/privata";
       // Stile attivo per Privata (Rosa Antico)
       btnPrivata.style.backgroundColor = "#D2B4B4";
       btnPrivata.style.color = "white";
