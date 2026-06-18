@@ -2,122 +2,51 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Studio 360 Pilates
+**Matwork | Reformer | Rieducazione del Movimento a Ladispoli**
 
-[Link to another page](./another-page.html).
+Benvenuti in **Studio 360 Pilates**. Uno spazio dedicato alla cura del corpo, all'equilibrio e al movimento consapevole. Lontano dai ritmi frenetici, il nostro metodo si concentra sulla precisione, sul recupero funzionale e sul benessere profondo.
 
-There should be whitespace between paragraphs.
+---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## 🌿 I Nostri Percorsi
 
-# Header 1
+*   **Pilates Reformer:** Lavoro sul macchinario per un allenamento di resistenza fluido. Ideale per riallineare la colonna e rinforzare il baricentro senza impatti sulle articolazioni.
+*   **Pilates Matwork:** Esercizi a corpo libero per sviluppare controllo, flessibilità e piena consapevolezza del proprio corpo.
+*   **Rieducazione del Movimento:** Sessioni mirate per ripristinare la corretta architettura posturale e sciogliere le tensioni muscolari.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+---
 
-## Header 2
+## 📅 Prenota la tua Lezione
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Scegli il giorno e l'orario dal calendario qui sotto. 
+_Nota: Al termine della prenotazione, verrai contattato per completare l'iscrizione._
 
-### Header 3
+<!-- Inizio Codice Cal.com -->
+<div id="cal-inline-embed" style="width:100%;height:600px;"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api} else p(api, ar); return api; } else p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "TUO_USERNAME/TUO_EVENTO", {origin:"https://cal.com"});
+  Cal("inline", { elementOrSelector: "#cal-inline-embed" });
+</script>
+<!-- Fine Codice Cal.com -->
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+---
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## 📌 Info e Regolamento
 
-#### Header 4
+Per garantire un servizio intimo, professionale e di altissima qualità, ti preghiamo di leggere le nostre linee guida:
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+1.  **Conferma con Acconto:** La prenotazione effettuata tramite il calendario è considerata "in attesa". Sarà confermata definitivamente solo al ricevimento dell'acconto (50%) tramite **Satispay** o **PayPal** (ti invieremo noi il link su WhatsApp). Il saldo avverrà in studio.
+2.  **Certificato Medico:** Per la tua sicurezza e nel rispetto delle normative, è obbligatorio inviarci copia del *Certificato Medico per attività sportiva non agonistica* prima della tua prima lezione.
+3.  **Politica di Cancellazione:** Le lezioni possono essere disdette o riprogrammate senza penali con almeno **24 ore di preavviso**. Oltre questo termine, l'acconto verrà trattenuto (o la lezione scalata dal pacchetto).
 
-##### Header 5
+---
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+## 📍 Contatti
 
-###### Header 6
+Siamo a **Ladispoli (RM)**.
+Hai dubbi su quale sia il percorso più adatto a te o vuoi informazioni sui nostri pacchetti prepagati?
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+*   📱 **[Scrivici su WhatsApp](https://wa.me/39INSERISCI_TUO_NUMERO)**
+*   📸 **Seguici su Instagram:** [@studio360pilates](#)
