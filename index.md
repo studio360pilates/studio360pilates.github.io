@@ -27,13 +27,22 @@ La qualità del tuo movimento è la nostra priorità. Per questo, tutte le lezio
 Scegli il giorno e l'orario dal calendario qui sotto. 
 _Nota: Al termine della prenotazione, verrai contattato su WhatsApp dalla nostra segreteria per completare l'iscrizione._
 
-<!-- Inizio Codice Cal.com -->
-<div id="cal-inline-embed" style="width:100%;height:600px;"></div>
+<!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-50min"></div>
 <script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api} else p(api, ar); return api; } else p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "studio-360-pilates-n0s257/50min", {origin:"https://cal.com"});
-  Cal("inline", { elementOrSelector: "#cal-inline-embed" });
-</script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "50min", {origin:"https://app.cal.com"});
+Cal.config = Cal.config || {};
+Cal.config.forwardQueryParams = true;
+
+  Cal.ns["50min"]("inline", {
+    elementOrSelector:"#my-cal-inline-50min",
+    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+    calLink: "studio-360-pilates-n0s257/50min",
+  });
+
+  Cal.ns["50min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#D2B4B4"},"dark":{"cal-brand":"#D2B4B4"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
 <!-- Fine Codice Cal.com -->
 
 ---
