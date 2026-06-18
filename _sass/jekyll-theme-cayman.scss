@@ -1,7 +1,18 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+// Nuovo font elegante: Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+// --- VARIABILI BRAND (Studio 360 Pilates) ---
+$brand-text: #4A4A4A;               // Grigio scuro per il testo (riposante)
+$brand-bg: #FFFFFF;                 // Bianco puro per lo sfondo
+$brand-primary: #D2B4B4;            // Rosa Antico Desaturato
+$brand-primary-light: #E0C6C6;      // Rosa Antico più chiaro per sfumature
+$brand-primary-dark: #B89A9A;       // Rosa Antico scuro per gli hover
+$brand-secondary: #E2E4E6;          // Grigio Perla per bottoni e dettagli
+$brand-secondary-dark: #D1D4D6;     // Grigio Perla scuro per bordi e hover
+$brand-border: #E2E4E6;             // Grigio Perla per divisori
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -28,10 +39,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: $body-text-color;
+  line-height: 1.6; // Leggermente aumentato per maggiore respiro
+  color: $brand-text;
+  background-color: $brand-bg;
 }
 
 #skip-to-content {
@@ -47,16 +59,17 @@ body {
     left: 10px;
     height: auto;
     width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
+    background: invert($brand-primary);
+    outline: thick solid invert($brand-primary);
   }
 }
 
 a {
-  color: $body-link-color;
+  color: $brand-primary;
   text-decoration: none;
 
   &:hover {
+    color: $brand-primary-dark;
     text-decoration: underline;
   }
 }
@@ -64,19 +77,20 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  color: $brand-text;
+  background-color: $brand-secondary;
+  border-color: $brand-secondary-dark;
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  font-weight: 600;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #222222;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: $brand-secondary-dark;
+    border-color: darken($brand-secondary-dark, 10%);
   }
 
   + .btn {
@@ -106,10 +120,10 @@ a {
 }
 
 .page-header {
-  color: $header-heading-color;
+  color: #FFFFFF;
   text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-color: $brand-primary;
+  background-image: linear-gradient(120deg, $brand-primary, $brand-primary-light);
 
   @include large {
     padding: 5rem 6rem;
@@ -127,6 +141,7 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  font-weight: 600;
 
   @include large {
     font-size: 3.25rem;
@@ -143,8 +158,8 @@ a {
 
 .project-tagline {
   margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7;
+  font-weight: 300;
+  opacity: 0.9;
 
   @include large {
     font-size: 1.25rem;
@@ -168,7 +183,7 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 2rem 6rem;
+    padding: 3rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
@@ -179,7 +194,7 @@ a {
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     font-size: 1rem;
   }
   
@@ -207,22 +222,22 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
-    font-weight: normal;
-    color: $section-headings-color;
+    font-weight: 600;
+    color: $brand-primary-dark; // I titoli riprendono il Rosa Antico scuro per eleganza
   }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
   }
 
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
-    background-color: $code-bg-color;
+    color: $brand-text;
+    background-color: $brand-bg;
     border-radius: 0.3rem;
   }
 
@@ -231,17 +246,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: $brand-text;
     word-wrap: normal;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    background-color: $brand-bg;
+    border: solid 1px $brand-border;
     border-radius: 0.3rem;
 
     > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: $brand-text;
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -289,13 +304,18 @@ a {
   ul,
   ol {
     margin-top: 0;
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
   }
 
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    color: lighten($brand-text, 15%);
+    border-left: 0.3rem solid $brand-primary; // Linea decorativa in Rosa Antico
 
     > :first-child {
       margin-top: 0;
@@ -311,17 +331,18 @@ a {
     width: 100%;
     overflow: auto;
     word-break: normal;
-    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    word-break: keep-all; 
     -webkit-overflow-scrolling: touch;
 
     th {
-      font-weight: bold;
+      font-weight: 600;
+      background-color: $brand-secondary; // Intestazione tabella Grigio Perla
     }
 
     th,
     td {
-      padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
+      padding: 0.75rem 1rem;
+      border: 1px solid $brand-border;
     }
   }
 
@@ -332,7 +353,7 @@ a {
       padding: 0;
       margin-top: 1rem;
       font-size: 1rem;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     dd {
@@ -342,18 +363,18 @@ a {
   }
 
   hr {
-    height: 2px;
+    height: 1px; // Linea di separazione più sottile ed elegante
     padding: 0;
-    margin: 1rem 0;
-    background-color: $hr-border-color;
+    margin: 2rem 0;
+    background-color: $brand-border;
     border: 0;
   }
 }
 
 .site-footer {
   padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  margin-top: 3rem;
+  border-top: solid 1px $brand-border;
 
   @include large {
     font-size: 1rem;
@@ -370,9 +391,9 @@ a {
 
 .site-footer-owner {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .site-footer-credits {
-  color: $blockquote-text-color;
+  color: lighten($brand-text, 20%);
 }
