@@ -38,7 +38,7 @@ Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili
 
 <!-- Contenitore Iframe Privata (Visibile di default) -->
 <div id="div-privata" style="width: 100%; height: 600px; -webkit-overflow-scrolling: touch; overflow-y: auto;">
-  <iframe src="https://cal.com/studio-360-pilates-n0s257/50min?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
+  <iframe src="https://cal.com/studio-360-pilates-n0s257/privata?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
 <!-- Contenitore Iframe Condivisa (Nascosto di default) -->
