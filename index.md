@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="{{ '/assets/image/studio360logo.jpg' | relative_url }}" alt="Studio 360 Pilates Logo" style="max-width: 220px; height: auto; border-radius: 8px;">
+</div>
+
 # Studio 360 Pilates
 **Matwork | Reformer | Rieducazione del Movimento a Ladispoli**
 
@@ -16,9 +20,9 @@ La qualità del tuo movimento è la nostra priorità. Tutte le lezioni sono cond
 
 ## 🌿 I Nostri Percorsi
 
-*   **Pilates Reformer:** Lavoro sul macchinario per un allenamento di resistenza fluido. Ideale per riallineare la colonna e rinforzare il baricentro senza impatti sulle articolazioni.
-*   **Pilates Matwork:** Esercizi a corpo libero per sviluppare controllo, flessibilità e piena consapevolezza del proprio corpo.
-*   **Rieducazione del Movimento:** Sessioni mirate per ripristinare la corretta architettura posturale, sciogliere le tensioni muscolari e prevenire fastidi e infortuni.
+* **Pilates Reformer:** Lavoro sul macchinario per un allenamento di resistenza fluido. Ideale per riallineare la colonna e rinforzare il baricentro senza impatti sulle articolazioni.
+* **Pilates Matwork:** Esercizi a corpo libero per sviluppare controllo, flessibilità e piena consapevolezza del proprio corpo.
+* **Rieducazione del Movimento:** Sessioni mirate per ripristinare la corretta architettura posturale, sciogliere le tensioni muscolari e prevenire fastidi e infortuni.
 
 ---
 
@@ -26,7 +30,6 @@ La qualità del tuo movimento è la nostra priorità. Tutte le lezioni sono cond
 
 Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili:
 
-<!-- Bottoni di Selezione -->
 <div style="display: flex; gap: 10px; margin-bottom: 20px; width: 100%;">
   <button id="btn-privata" onclick="switchCalendar('privata')" style="flex: 1; padding: 12px; font-family: 'Montserrat', sans-serif; font-weight: 600; border: 1px solid #D1D4D6; border-radius: 6px; cursor: pointer; background-color: #D2B4B4; color: white; transition: all 0.3s;">
     👤 Lezione Privata (40€)
@@ -36,12 +39,10 @@ Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili
   </button>
 </div>
 
-<!-- Contenitore Iframe Privata (Visibile di default) -->
 <div id="div-privata" style="width: 100%; height: 600px; -webkit-overflow-scrolling: touch; overflow-y: auto;">
   <iframe src="https://cal.com/studio-360-pilates-n0s257/privata?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<!-- Contenitore Iframe Condivisa (Nascosto di default) -->
 <div id="div-condivisa" style="width: 100%; height: 600px; display: none; -webkit-overflow-scrolling: touch; overflow-y: auto;">
   <iframe src="https://cal.com/studio-360-pilates-n0s257/condivisa?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
@@ -86,8 +87,8 @@ Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili
 ## 💳 Pacchetti e Promozioni
 
 Offriamo diverse soluzioni pensate per dare continuità al tuo percorso di benessere:
-*   **Lezione Singola:** Perfetta per provare il nostro metodo o per chi ha impegni variabili.
-*   **Pacchetti da 5 o 10 Lezioni:** La scelta ideale per impostare un lavoro costante nel tempo. I pacchetti prevedono il saldo anticipato in un'unica soluzione tramite la bacheca del nostro studio, garantendoti la massima comodità organizzativa.
+* **Lezione Singola:** Perfetta per provare il nostro metodo o per chi ha impegni lavorativi variabili (40€ Privata / 20€ Condivisa).
+* **Pacchetto 10 Lezioni (300€):** La scelta ideale per impostare un lavoro costante nel tempo. Il pacchetto richiede il **pagamento anticipato** in un'unica soluzione tramite la nostra segreteria, garantendoti la massima comodità organizzativa per le prenotazioni future.
 
 ---
 
@@ -95,9 +96,9 @@ Offriamo diverse soluzioni pensate per dare continuità al tuo percorso di benes
 
 Per mantenere un ambiente sereno e garantire un servizio di altissima qualità, ti preghiamo di leggere le nostre linee guida:
 
-1.  **Pagamento Anticipato:** Per ottimizzare la gestione dei posti in sala (estremamente limitati sui macchinari), la prenotazione si intende confermata esclusivamente al completamento del pagamento online sicuro tramite carta di credito sul nostro portale.
+1.  **Costi e Prenotazioni:** La prenotazione tramite il calendario blocca ufficialmente il tuo posto in sala. Il saldo della lezione (40€ o 20€ in base al percorso scelto) o l'acquisto del pacchetto verrà gestito tramite la segreteria.
 2.  **Certificato Medico:** Per la tua sicurezza e nel rispetto delle normative vigenti, è obbligatorio inviarci copia del *Certificato Medico per attività sportiva non agonistica* in corso di validità prima di accedere in sala per la prima volta.
-3.  **Politica di Cancellazione:** Le lezioni possono essere disdette o riprogrammate senza alcuna penale con almeno **24 ore di preavviso**. Oltre questo termine, la sessione verrà interamente addebitata.
+3.  **Politica di Cancellazione:** Le lezioni possono essere disdette o riprogrammate senza alcuna penale con almeno **24 ore di preavviso**. Oltre questo termine, per rispetto del lavoro delle nostre istruttrici e degli altri soci, la sessione verrà interamente addebitata o decurtata dal pacchetto attivo.
 
 ---
 
@@ -114,7 +115,7 @@ Assolutamente sì. Il nostro approccio non è "da palestra", ma orientato alla c
 ## 📍 Contatti
 
 Siamo a **Ladispoli (RM)**.
-Hai dubbi su quale sia il percorso più adatto a te o desideri ricevere il nostro listino prezzi?
+Hai dubbi su quale sia il percorso più adatto a te o desideri maggiori informazioni?
 
-*   📱 **[Scrivici su WhatsApp](https://wa.me/39INSERISCI_TUO_NUMERO)**
-*   📸 **Seguici su Instagram:** [@studio360pilates](#)
+* 📱 **[Scrivici su WhatsApp](https://wa.me/39INSERISCI_TUO_NUMERO)**
+* 📸 **Seguici su Instagram:** [@studio360pilates](#)
