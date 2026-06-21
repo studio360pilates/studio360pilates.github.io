@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div style="margin-bottom: 3rem;">
+<div style="margin-bottom: 3rem; margin-top: 1rem;">
   <img src="{{ '/assets/image/logo.jpeg' | relative_url }}" alt="Logo dello Studio" style="width: 100%; height: auto; display: block;">
 </div>
 
@@ -15,6 +15,8 @@ La qualità del tuo movimento è la nostra priorità. Tutte le lezioni sono cond
 
 ---
 
+<div id="percorsi" style="scroll-margin-top: 100px;"></div>
+
 ## 🌿 I Nostri Percorsi
 
 * **Pilates Reformer:** Lavoro sul macchinario per un allenamento di resistenza fluido. Ideale per riallineare la colonna e rinforzare il baricentro senza impatti sulle articolazioni.
@@ -22,6 +24,8 @@ La qualità del tuo movimento è la nostra priorità. Tutte le lezioni sono cond
 * **Rieducazione del Movimento:** Sessioni mirate per ripristinare la corretta architettura posturale, sciogliere le tensioni muscolari e prevenire fastidi e infortuni.
 
 ---
+
+<div id="prenota" style="scroll-margin-top: 100px;"></div>
 
 ## 📅 Prenota la tua Lezione
 
@@ -87,6 +91,8 @@ Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili
 
 ---
 
+<div id="prezzi" style="scroll-margin-top: 100px;"></div>
+
 ## 💳 Pacchetti e Promozioni
 
 Offriamo diverse soluzioni pensate per dare continuità al tuo percorso di benessere:
@@ -94,6 +100,8 @@ Offriamo diverse soluzioni pensate per dare continuità al tuo percorso di benes
 * **Pacchetto 10 Lezioni (300€):** La scelta ideale per impostare un lavoro costante nel tempo. Il pacchetto richiede il **pagamento anticipato** in un'unica soluzione tramite la nostra segreteria, garantendoti la massima comodità organizzativa per le prenotazioni future.
 
 ---
+
+<div id="info" style="scroll-margin-top: 100px;"></div>
 
 ## 📌 Info e Regolamento
 
