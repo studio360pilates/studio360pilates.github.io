@@ -27,54 +27,60 @@ La qualità del tuo movimento è la nostra priorità. Tutte le lezioni sono cond
 
 Scegli la tipologia di lezione per visualizzare i giorni e gli orari disponibili:
 
-<div style="display: flex; gap: 10px; margin-bottom: 20px; width: 100%;">
-  <button id="btn-privata" onclick="switchCalendar('privata')" style="flex: 1; padding: 12px; font-family: 'Montserrat', sans-serif; font-weight: 600; border: 1px solid #D1D4D6; border-radius: 6px; cursor: pointer; background-color: #D2B4B4; color: white; transition: all 0.3s;">
-    👤 Lezione Privata (40€)
-  </button>
-  <button id="btn-condivisa" onclick="switchCalendar('condivisa')" style="flex: 1; padding: 12px; font-family: 'Montserrat', sans-serif; font-weight: 600; border: 1px solid #D1D4D6; border-radius: 6px; cursor: pointer; background-color: #E2E4E6; color: #4A4A4A; transition: all 0.3s;">
-    👥 Lezione Condivisa (20€)
-  </button>
+<!-- Toggle Switch -->
+<div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px; margin-top: 10px; font-family: 'Montserrat', sans-serif;">
+  <label for="calendar-toggle" id="label-privata" style="font-weight: 600; color: #D2B4B4; cursor: pointer; font-size: 0.95rem;">
+    👤 Privata (40€)
+  </label>
+  
+  <label for="calendar-toggle" style="position: relative; display: inline-block; width: 60px; height: 34px; cursor: pointer; flex-shrink: 0;">
+    <input type="checkbox" id="calendar-toggle" onchange="toggleCalendar()" style="opacity: 0; width: 0; height: 0; position: absolute;">
+    <span id="toggle-bg" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #D2B4B4; border-radius: 34px; transition: .4s;"></span>
+    <span id="toggle-slider" style="position: absolute; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: white; border-radius: 50%; transition: .4s; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></span>
+  </label>
+
+  <label for="calendar-toggle" id="label-condivisa" style="font-weight: 600; color: #4A4A4A; cursor: pointer; font-size: 0.95rem;">
+    👥 Condivisa (20€)
+  </label>
 </div>
 
+<!-- Contenitore Iframe Privata (Visibile di default) -->
 <div id="div-privata" style="width: 100%; height: 600px; -webkit-overflow-scrolling: touch; overflow-y: auto;">
   <iframe src="https://cal.com/studio-360-pilates-n0s257/privata?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
+<!-- Contenitore Iframe Condivisa (Nascosto di default) -->
 <div id="div-condivisa" style="width: 100%; height: 600px; display: none; -webkit-overflow-scrolling: touch; overflow-y: auto;">
   <iframe src="https://cal.com/studio-360-pilates-n0s257/condivisa?embed=booking" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
 <script type="text/javascript">
-  function switchCalendar(type) {
-    const btnPrivata = document.getElementById('btn-privata');
-    const btnCondivisa = document.getElementById('btn-condivisa');
+  function toggleCalendar() {
+    const isCondivisa = document.getElementById('calendar-toggle').checked;
     const divPrivata = document.getElementById('div-privata');
     const divCondivisa = document.getElementById('div-condivisa');
+    const labelPrivata = document.getElementById('label-privata');
+    const labelCondivisa = document.getElementById('label-condivisa');
+    const slider = document.getElementById('toggle-slider');
 
-    if (type === 'privata') {
-      // Mostra Privata, Nascondi Condivisa
+    if (!isCondivisa) {
+      // Toggle a sinistra (Lezione Privata)
       divPrivata.style.display = "block";
       divCondivisa.style.display = "none";
       
-      // Colora bottone Privata (Rosa Antico)
-      btnPrivata.style.backgroundColor = "#D2B4B4";
-      btnPrivata.style.color = "white";
+      labelPrivata.style.color = "#D2B4B4"; // Rosa antico
+      labelCondivisa.style.color = "#4A4A4A"; // Grigio scuro
       
-      // Spegni bottone Condivisa (Grigio Perla)
-      btnCondivisa.style.backgroundColor = "#E2E4E6";
-      btnCondivisa.style.color = "#4A4A4A";
+      slider.style.transform = "translateX(0)";
     } else {
-      // Mostra Condivisa, Nascondi Privata
+      // Toggle a destra (Lezione Condivisa)
       divPrivata.style.display = "none";
       divCondivisa.style.display = "block";
       
-      // Colora bottone Condivisa (Rosa Antico)
-      btnCondivisa.style.backgroundColor = "#D2B4B4";
-      btnCondivisa.style.color = "white";
+      labelPrivata.style.color = "#4A4A4A"; // Grigio scuro
+      labelCondivisa.style.color = "#D2B4B4"; // Rosa antico
       
-      // Spegni bottone Privata (Grigio Perla)
-      btnPrivata.style.backgroundColor = "#E2E4E6";
-      btnPrivata.style.color = "#4A4A4A";
+      slider.style.transform = "translateX(26px)";
     }
   }
 </script>
