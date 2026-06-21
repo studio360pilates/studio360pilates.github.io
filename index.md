@@ -2,14 +2,11 @@
 layout: default
 ---
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  <img src="{{ '/assets/image/logo.jpeg' | relative_url }}" alt="Studio 360 Pilates Logo" style="max-width: 220px; height: auto; border-radius: 8px;">
+<div style="text-align: center; margin-bottom: 3rem; margin-top: 1rem;">
+  <img src="{{ '/assets/image/logo.jpeg' | relative_url }}" alt="Logo dello Studio" style="max-width: 380px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
 </div>
 
-# Studio 360 Pilates
-**Matwork | Reformer | Rieducazione del Movimento a Ladispoli**
-
-Benvenuti in **Studio 360 Pilates**. Uno spazio esclusivo dedicato alla cura del corpo, all'equilibrio e al movimento consapevole. Lontano dai ritmi frenetici, il nostro approccio si concentra sulla precisione, sul recupero funzionale e sul benessere profondo, sempre guidato da istruttrici certificate.
+Benvenuti nel nostro spazio esclusivo dedicato alla cura del corpo, all'equilibrio e al movimento consapevole. Lontano dai ritmi frenetici, il nostro approccio si concentra sulla precisione, sul recupero funzionale e sul benessere profondo, sempre guidato da istruttrici certificate.
 
 ---
 
