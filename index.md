@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="{{ '/assets/image/logo.jepg' | relative_url }}" alt="Studio 360 Pilates Logo" style="max-width: 220px; height: auto; border-radius: 8px;">
+  <img src="{{ '/assets/image/logo.jpeg' | relative_url }}" alt="Studio 360 Pilates Logo" style="max-width: 220px; height: auto; border-radius: 8px;">
 </div>
 
 # Studio 360 Pilates
