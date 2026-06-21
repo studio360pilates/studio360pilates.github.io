@@ -13,33 +13,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
-
-    <style>
-      /* Stili specifici per l'header del tema Cayman con la tua palette */
-      .page-header {
-        background-color: #D2B4B4;
-        background-image: linear-gradient(120deg, #D2B4B4, #E0C6C6);
-      }
-      .project-name {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: #FFFFFF;
-      }
-      .project-tagline {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        color: #FFFFFF;
-      }
-    </style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Salta al contenuto.</a>
-
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: "Studio 360 Pilates" }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: "Matwork • Reformer • Movimento Consapevole" }}</h2>
-    </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
