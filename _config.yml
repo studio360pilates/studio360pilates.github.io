@@ -2,4 +2,7 @@ title: Studio 360 Pilates
 description: Matwork | Reformer | Rieducazione del Movimento a Ladispoli
 theme: jekyll-theme-cayman
 lang: it-IT
-google_analytics:
+
+url: "https://studio360pilates.github.io" 
+
+image: /assets/image/studio360logo.jpg
